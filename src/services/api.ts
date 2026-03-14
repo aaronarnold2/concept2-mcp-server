@@ -14,7 +14,7 @@ function getAccessToken(): string {
 
 export async function apiRequest<T>(
   endpoint: string,
-  method: "GET" | "POST" | "PUT" | "PATCH" | "DELETE" = "GET",
+  method: "GET" | "POST" | "PUT" | "PATCH" = "GET",
   data?: unknown,
   params?: Record<string, unknown>
 ): Promise<T> {
